@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Car : MonoBehaviour
 {
-    float maxSpeed = 10000f;
+    float maxSpeed = 1000000f;
     float forwardInput;
     float steeringInput;
-    public float forwardSpeed = 500;
+    public float forwardSpeed = 10000;
     public float steeringSpeed = 200;
     Rigidbody2D rigidbody;
 
