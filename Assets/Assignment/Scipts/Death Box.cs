@@ -6,19 +6,9 @@ public class DeathBox : MonoBehaviour
 {
 
     public GameObject player;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        //Destoys the player on contact
         Destroy(player);
     }
 }

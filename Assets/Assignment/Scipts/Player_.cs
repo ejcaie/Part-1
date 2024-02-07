@@ -9,6 +9,7 @@ public class Player_ : MonoBehaviour
     public float force = 500f;
     public Vector2 position;
     public int ground;
+    public float score = 0f;
     Rigidbody2D rigidbody;
 
     // Start is called before the first frame update
@@ -21,7 +22,9 @@ public class Player_ : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Allows player to move horizontally
         position.x = Input.GetAxis("Horizontal");
+        //If the player touches the ground, causes them to jump
         if (ground != 0)
         {
             position.y = 75;

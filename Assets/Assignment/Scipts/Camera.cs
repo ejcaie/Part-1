@@ -15,6 +15,7 @@ public class Camera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Causes the camera to pan up slowly
         transform.Translate(0, speed * Time.deltaTime, 0);
     }
 }
