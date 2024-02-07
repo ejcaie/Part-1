@@ -24,7 +24,11 @@ public class Player_ : MonoBehaviour
         position.x = Input.GetAxis("Horizontal");
         if (ground != 0)
         {
-            position.y = 10;
+            position.y = 75;
+        }
+        else
+        {
+            position.y = 0;
         }
     }
 
