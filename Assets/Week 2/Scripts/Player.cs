@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
     public float force = 150f;
     Vector2 direction;
     public Rigidbody2D rigidbody;
+    internal static bool onGround;
+
     // Start is called before the first frame update
     void Start()
     {
